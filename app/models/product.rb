@@ -4,5 +4,6 @@ class Product < ApplicationRecord
   has_many :comments
   has_many :categores, throught: :product_categories
   has_many :product_categories
-  validates :user, :price, presence: true	
+  has_many :price, presence: true
+  validates :user, :price, presence: true
 end

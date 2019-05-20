@@ -2,9 +2,20 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.1'
+gem "font-awesome-rails"
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
+
+# Add gem
+# bootstrap-sass is a Sass-powered version of Bootstrap 3,
+# ready to drop right into your Sass powered applications.
+gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+# bcrypt() is a sophisticated and secure hash algorithm designed by The OpenBSD project for hashing passwords.
+# The bcrypt Ruby gem provides a simple wrapper for safely handling passwords.
+gem 'bcrypt', '~> 3.1', '>= 3.1.12'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
