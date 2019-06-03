@@ -78,13 +78,20 @@ footer {
   padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
-  ul {
-    float: right;
-    list-style: none;
-    li {
-      float: left;
-      margin-left: 15px;
-    }
+  margin-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+small {
+  float: left;
+}
+ul {
+  float: right;
+  list-style: none;
+  li {
+    float: left;
+    margin-left: 15px;
   }
 }
 
@@ -100,19 +107,19 @@ aside {
       border: 0;
       padding-top: 0;
   }
-  span {
-    display: block;
-    margin-bottom: 3px;
-    line-height: 1;
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+    }
   }
-  h1 {
-    font-size: 1.4em;
-    text-align: left;
-    letter-spacing: -1px;
-    margin-top: 0;
-    margin-bottom: 3px;
-  }
- }
 }
 
 .gravatar {
@@ -131,6 +138,19 @@ input, textarea, select, .uneditable-input {
   margin-bottom: 15px;
   @include box_sizing;
 }
+//     position: relative;
+//     flex: 1 1 auto;
+//     width: 1%;
+//     margin-bottom: 0;
+//     padding: 40px;
+// }
+// .btn {
+//     border-radius: 0px;
+//     font-size: 14px;
+//     padding: 0px 15px;
+//     height: 30px;
+//     line-height: 30px;
+// }
 
 input {
   height: auto !important;
