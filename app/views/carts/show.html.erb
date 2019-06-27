@@ -1,0 +1,9 @@
+<h3 class="text-center">Products for Sale</h3>
+<div class="row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <%= will_paginate @product_orders %>
+    <% @product_orders.each do |product_order| %>
+      <%= render "cart_row", product_order: product_order %>
+    <% end %>
+  </div>
+</div>

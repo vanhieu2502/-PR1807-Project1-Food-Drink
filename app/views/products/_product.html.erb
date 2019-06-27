@@ -6,7 +6,11 @@
       <p class="card-text"><%= product.description%></p>
       price: <%= content_tag :del, product.price %>
       <%= content_tag :span, product.sale_price %> <br>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <%= form_for current_order.product_orders.build do |f| %>
+        <%= f.hidden_field :product_id, value: product.id %>
+        <%= f.number_field :quantity, value: 1, class: "form-control", min: 1 %>
+        <%= f.submit "Add to cart", class: "btn btn-primary" %>
+      <% end %>
     </div>
   </div>
 </div>

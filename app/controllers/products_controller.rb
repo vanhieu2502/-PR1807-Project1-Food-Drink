@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
       Product.send params[:kind]
     else
       Product.all
-    end
+    end.page(params[:page]).per_page(8)
   end
 end
 

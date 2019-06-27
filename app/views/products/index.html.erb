@@ -1,9 +1,11 @@
 <% provide(:title, 'All products') %>
 <h1>All products</h1>
+<%= will_paginate @products %>
 <div class="row">
   <div class="products">
     <%# @products.each do |product| %>
     <%= render @products %>
   </div>
 </div>
+<%= will_paginate @products %>
 
